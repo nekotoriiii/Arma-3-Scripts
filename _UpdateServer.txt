@@ -1,0 +1,3 @@
+force_install_dir ./Arma3/A3Master
+app_update 233780 -beta profiling -betapassword CautionSpecialProfilingAndTestingBranchArma3 validate
+exit

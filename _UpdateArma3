@@ -1,0 +1,1 @@
+steamcmd +login lasso133 +runscript ./Arma3/_UpdateServer.txt

@@ -1,0 +1,33 @@
+#!/bin/bash
+if [ ! -f ./mods.txt ]; then
+	echo "No mods.txt file! Stopping bash..."
+	exit 1
+fi
+
+if [ ! -f ./mods_regular.txt ]; then
+	echo "No mods_regular.txt file! Stopping bash..."
+	exit 1
+fi
+echo verifying mods.txt and mods_regular.txt first...
+while read line; do echo $line >> mods_verified.txt; done < mods.txt
+while read line; do echo $line >> mods_verified.txt; done < mods_regular.txt
+tr -d "$'\r'" < mods_verified.txt > mods_verified2.txt
+
+echo Making links from mods.txt and mods_regular.txt
+while read line; do ln -sr ../_mods/mods/$line ./@$line; done < mods_verified2.txt
+while read line; do ln -sr ../_mods/mods/$line ./@$line; done < mods_verified2.txt
+
+rm mods_verified.txt mods_verified2.txt
+
+echo Copying keys from mods...
+ln -sr ../_A3Files/keys/* keys/
+ln -sr @*/keys/* keys/
+ln -sr @*/key/* keys/
+
+echo Putting mods in a parameter file \(mods_parameter.txt\)
+find @* >> mods2.txt
+while read line; do echo $line\\\; >> mods3.txt; done < mods2.txt
+tr -d '\n' < mods3.txt > mods_parameter.txt
+rm mods2.txt mods3.txt
+
+echo All done!

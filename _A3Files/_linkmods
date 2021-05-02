@@ -1,4 +1,5 @@
 #!/bin/bash
+# CHANGE TO LF!
 if [ ! -f ./mods.txt ]; then
 	echo "No mods.txt file! Stopping bash..."
 	exit 1

@@ -1,0 +1,40 @@
+#!/bin/bash
+folderName=$1
+
+if [ ! -n "$folderName" ]; then
+    echo Hello! What would you want the new directory to be called?
+fi
+
+while [ ! -n "$folderName" ]; do
+    if [ ! -n "$folderName" ]; then
+        read folderName
+        folderName=`echo $folderName | tr ' ' '_'`
+        if [ ! -n "$folderName" ]; then
+        echo New folder Name can not be empty!
+        fi
+    fi
+done
+
+echo Making directory...
+mkdir $folderName
+
+echo Making symbolic links for $folderName
+ln -sr "./A3Master/"* "./$folderName/"
+
+echo Removing keys, logs, and mpmissions
+for removeThese in logs keys mpmissions; do
+    rm "./$folderName/$removeThese"
+done
+
+echo Making keys, logs and mpmissions as actual folders
+for removeThese in logs keys mpmissions; do
+    mkdir "./$folderName/$removeThese"
+done
+
+echo Copying main files from _A3Files...
+cp "./_A3Files/"* "./$folderName/" -r
+
+echo Making mods.txt
+touch $folderName/mods.txt
+
+echo Good Luck

@@ -17,7 +17,12 @@ tr -d "$'\r'" < mods_verified.txt > mods_verified2.txt
 cut -f1 -d " " < mods_verified2.txt > mods_verified3.txt
 
 echo removing the stupid duplications that happen
-while read line; do rm -rf ../_mods/mods/$line/$line; done < mods_verified3.txt
+while read line
+do 
+	if [ "../_mods/mods/$line" != "../_mods/mods/" ]; then
+		rm -rf ../_mods/mods/$line/$line
+	fi
+done < mods_verified3.txt
 
 rm mods_verified.txt mods_verified2.txt mods_verified3.txt
 

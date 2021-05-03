@@ -1,2 +1,2 @@
-./arma3serverprofiling_x64 -name="server" -maxMem=7000 -enableHT -hugePages -loadMissionToMemory -autoInit -port=2302 -cfg=basic.cfg -config=server.cfg -mod=@1556296528\;@450814997\;@583496184\;@779568775\;@1208517358\;@1910457930\;@2207328876\;@2262255106\;  2>&1 | tee "logs/$(date +%d-%m-%y_%T).rpt"
-
+./arma3serverprofiling_x64 -name="server" -maxMem=7000 -enableHT -hugePages -loadMissionToMemory -autoInit -port=2302 -cfg=basic.cfg -config=server.cfg -mod=@whatever  2>&1 | tee "logs/$(date +%d-%m-%y_%T).rpt"
+./_deleteDupeDirectories

@@ -13,3 +13,5 @@
 2461406717 // Grassphobia
 2010222986 // GGE Core
 2010226699 // GGE Weapon Canting
+632435682 // Remove Stamina (No ACE)
+570118882 // No Weapon Sway

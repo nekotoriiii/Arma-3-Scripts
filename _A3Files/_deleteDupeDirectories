@@ -19,7 +19,7 @@ cut -f1 -d " " < mods_verified2.txt > mods_verified3.txt
 echo removing the stupid duplications that happen
 while read line; do
 	if [ -d  "./@$line/$line" ]; then
-		rm -rf "./@$line/$line"
+		rm "./@$line/$line"
 	fi
 done < mods_verified3.txt
 

@@ -1,3 +1,1 @@
-fusermount -u mods_caseinsensitive
 find -L ./@* -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
-./_mount

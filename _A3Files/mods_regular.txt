@@ -11,5 +11,3 @@
 450814997 // CBA_A3
 1562915006 // Weapon Holster Remastered
 2461406717 // Grassphobia
-2010222986 // GGE Core
-2010226699 // GGE Weapon Canting

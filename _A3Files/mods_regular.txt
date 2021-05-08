@@ -11,3 +11,12 @@
 450814997 // CBA_A3
 1562915006 // Weapon Holster Remastered
 2461406717 // Grassphobia
+1770265310 // No More Aircraft Bouncing
+2060904217 // Real Hero's Ragdoll Mod
+2260572637 // BettIR
+463939057 // ACE
+782415569 // Remove Stamina ACE3
+632435682 // Remove Stamina
+570118882 // No Weapon Sway
+1770265310 // No More Aircraft Bouncing
+2060904217 // Real Hero's Ragdoll Mod

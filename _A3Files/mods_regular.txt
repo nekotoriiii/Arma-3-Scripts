@@ -20,6 +20,6 @@
 570118882 // No Weapon Sway
 1770265310 // No More Aircraft Bouncing
 2060904217 // Real Hero's Ragdoll Mod
-1858075458 // LAMBS_Danger.fsm
 721359761 // VCOM AI
 930264602 // Mr Sanchez Headlamps
+1397683809 // Reduced Haze Mod

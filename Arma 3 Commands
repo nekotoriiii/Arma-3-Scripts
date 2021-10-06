@@ -1,2 +1,11 @@
 [ player ] call ACE_medical_treatment_fnc_fullHealLocal; // ACE Full Heal
 ["AmmoboxInit", [cursorTarget, true, { _this distance _target  < 50 }]] call BIS_fnc_arsenal; // Arsenal add to cursorTarget and usable from 50m away
+
+// create a position 30 meters infront of the player
+_pos = player getPos [30, getDir player];
+
+// create empty helipad at the position
+_vehicle = createVehicle [ "Land_HelipadEmpty_F", _pos, [], 0, "CAN_COLLIDE"];
+
+// pass created vehicle to function for use as position
+["Open", [true, _vehicle]] call BIS_fnc_garage; // Virtual Garage

@@ -1,6 +1,6 @@
 [ player ] call ACE_medical_treatment_fnc_fullHealLocal; // ACE Full Heal
 ["AmmoboxInit", [cursorTarget, true, { _this distance _target  < 50 }]] call BIS_fnc_arsenal; // Arsenal add to cursorTarget and usable from 50m away
-
+[player, player, true] call ace_arsenal_fnc_openBox // ACE Full Arsenal
 --- --- --- MP Compatible Virtual Garage
 
 VG_map_click = {

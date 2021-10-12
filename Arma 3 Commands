@@ -3,6 +3,7 @@
 [player, player, true] call ace_arsenal_fnc_openBox; // ACE Full Arsenal
 [_box, true, true] call ace_arsenal_fnc_initBox; // Add ACE Arsenal to Box (accessible using ACE Interact)
 
+https://community.bistudio.com/wiki/setVehicleVarName // Setting object name for ease of use and server execution
 
 --- --- --- MP Compatible Virtual Garage
 

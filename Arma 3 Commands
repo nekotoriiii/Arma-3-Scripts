@@ -1,7 +1,9 @@
 [ player ] call ACE_medical_treatment_fnc_fullHealLocal; // ACE Full Heal
 ["AmmoboxInit", [cursorTarget, true, { _this distance _target  < 50 }]] call BIS_fnc_arsenal; // Arsenal add to cursorTarget and usable from 50m away
+
 [player, player, true] call ace_arsenal_fnc_openBox; // ACE Full Arsenal
 [_box, true, true] call ace_arsenal_fnc_initBox; // Add ACE Arsenal to Box (accessible using ACE Interact)
+[mapX, true] call ace_arsenal_fnc_removeBox; // Remove ACE Arsenal Interaction
 
 https://community.bistudio.com/wiki/setVehicleVarName // Setting object name for ease of use and server execution
 

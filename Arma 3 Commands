@@ -7,6 +7,8 @@
 
 https://community.bistudio.com/wiki/setVehicleVarName // Setting object name for ease of use and server execution
 
+"IG_supplyCrate_F" // Ideal Vehicle for Arsenal 
+
 --- --- --- MP Compatible Virtual Garage
 
 VG_map_click = {

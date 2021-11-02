@@ -6,6 +6,15 @@
   - **mods** - The folder in which _linkMods will get mods from
   - **mods_caseinsensitive** - The folder in which the program will update mods from (I use rclone to update mods, and ciopfs [Case Insensitive Operating File System])
 
+Root Folder Structure
+![](https://i.imgur.com/3dxZ2PU.png)
+
+\_A3Files Folder Structure
+![](https://i.imgur.com/XyXDbKD.png)
+
+\_mods Folder Structure
+![](https://i.imgur.com/fm7iwYf.png)
+
 # What the scripts will do
 - _UpdateArma3 - Update Arma 3 (A3Master) with SteamCMD (SteamCMD files can be in the same folder)
 - _UpdateServer.txt - Called by _UpdateArma3

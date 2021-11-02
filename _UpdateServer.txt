@@ -1,3 +1,5 @@
 force_install_dir ./Arma3/A3Master
-app_update 233780 -beta profiling -betapassword CautionSpecialProfilingAndTestingBranchArma3 validate
+// -beta profiling -betapassword CautionSpecialProfilingAndTestingBranchArma3
+// add the line above between "233780" and "validate" to get the profiling branch
+app_update 233780 validate
 exit

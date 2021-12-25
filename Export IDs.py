@@ -1,5 +1,6 @@
 import re
-file = open("Arma 3 Preset SP Stuff No ADMIN.html", "r")
+open_file = input("Enter name of file (including extension): ")
+file = open(f"{open_file}", "r")
 IDs = []
 count = 0
 for line in file:

@@ -660,22 +660,21 @@ force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
 
 // ACRE2
-acre_sys_core_automaticAntennaDirection = false;
-acre_sys_core_defaultRadioVolume = 0.8;
+acre_sys_core_automaticAntennaDirection = true;
 force force acre_sys_core_fullDuplex = true;
 force force acre_sys_core_godVolume = 1;
 force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = false;
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1;
-force force acre_sys_core_revealToAI = 1;
+force force acre_sys_core_revealToAI = 0;
 force force acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.250746;
-force force acre_sys_core_ts3ChannelName = "ACRE2 Channel";
-force force acre_sys_core_ts3ChannelPassword = "WTF ACRE2";
+force force acre_sys_core_terrainLoss = 0;
+force force acre_sys_core_ts3ChannelName = "ACRE";
+force force acre_sys_core_ts3ChannelPassword = "Bruh";
 force force acre_sys_core_ts3ChannelSwitch = true;
 force force acre_sys_core_unmuteClients = true;
 force force acre_sys_signal_signalModel = 0;
+
+
 
 // ACRE2 Gestures
 force force acre_sys_gestures_enabled = true;

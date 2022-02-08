@@ -62,4 +62,6 @@ _action = ["Open Arsenal", "Arsenal", "", _statement, _condition] call ace_inter
 [(typeOf player),1,["ACE_SelfActions","ACE_Equipment","Open Arsenal"]] call ace_interact_menu_fnc_removeActionFromClass;
 
 -----------------
-
+// Change Side
+_grpname = createGroup independent;
+[this] joinSilent _grpname;

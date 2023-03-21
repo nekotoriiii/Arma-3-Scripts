@@ -99,7 +99,7 @@ _condition = {
 _statement = {};
 
 _insertChildren = {
-	private _players = allPlayers
+	private _players = allUnits;
 	
 	private _actions = [];
 	{
@@ -130,7 +130,7 @@ _statement = {
 };
 
 _insertChildren = {
-	private _players = allPlayers;
+	private _players = allUnits;
 	
 	private _actions = [];
 	{

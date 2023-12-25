@@ -17,3 +17,4 @@ giveZeus = {
 };
 
 // Has to be 2 for a server exec only!
+[player, giveZeus] remoteExec ["call", 2];

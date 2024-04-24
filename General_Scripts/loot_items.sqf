@@ -9,7 +9,7 @@ lootshit = {
     _radius = 1000;
     _supplies = ((getPos player) nearSupplies _radius) select {  
         (_x isKindOf "Man" && !(alive _x)) ||   
-        {(typeOf _x) in (["WeaponHolderSimulated", "GroundWeaponHolder", "WeaponHolder", "Box_IND_Wps_F"])}  
+        {(typeOf _x) in (["WeaponHolderSimulated", "GroundWeaponHolder", "WeaponHolder", "Box_IND_Wps_F", "Box_NATO_Wps_F", "rhs_7ya37_1_single"])}  
     }; 
      
     {  
